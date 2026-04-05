@@ -1,8 +1,9 @@
 name: Hello World
-on: push
+on: 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Hello Step
-        run: echo "Hello, ${{vars.NAME}}"
+        run: echo "Hello, ${{secrets.DOCKER_PASSWORD}}"
+
