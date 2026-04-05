@@ -10,4 +10,6 @@ jobs:
 
     steps:
       - name: Connect to Env
+        env:
+          APP_ENV: "production"
         run: echo "App is connecting to $APP_ENV"
